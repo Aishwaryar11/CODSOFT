@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    
+    <!-- Adding the style for the background image -->
+    <style>
+        body {
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-nt3JTWVbfDPn2hyBE4qZF_IrhCQqTk-jJQ&usqp=CAU');
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .wrapper {
+            background-color: rgba(255, 255, 255, 0.8); /* You can adjust the background color opacity as needed */
+            padding: 20px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper"> <!-- A container that wraps all the content on the page -->
+        <div class="title"> <!-- A section that displays the title "Calculator" -->
+            <p>Calculator</p> <!-- The text "Calculator" -->
+        </div>
+
+        <div class="container"> <!-- A container for the calculator interface -->
+            <div class="calculator"> <!-- The actual calculator interface -->
+                <input type="text" id="inputBox" placeholder="0" /> <!-- An input box where numbers and calculations are displayed -->
+                <div> <!-- Group of buttons for various functions (AC, DEL, %, /) -->
+                    <button class="button operator">AC</button> <!-- Button to clear all (AC) -->
+                    <button class="button operator">DEL</button> <!-- Button to delete (DEL) -->
+                    <button class="button operator">%</button> <!-- Button for percentage (%) -->
+                    <button class="button operator">/</button> <!-- Button for division (/) -->
+                </div>
+                <div> <!-- Group of buttons for numbers 7-9 and multiplication (*) -->
+                    <button class="button">7</button>
+                    <button class="button">8</button>
+                    <button class="button">9</button>
+                    <button class="button operator"></button> <!-- Button for multiplication () -->
+                </div>
+                <div> <!-- Group of buttons for numbers 4-6 and subtraction (-) -->
+                    <button class="button">4</button>
+                    <button class="button">5</button>
+                    <button class="button">6</button>
+                    <button class="button operator">-</button> <!-- Button for subtraction (-) -->
+                </div>
+                <div> <!-- Group of buttons for numbers 1-3 and addition (+) -->
+                    <button class="button">1</button>
+                    <button class="button">2</button>
+                    <button class="button">3</button>
+                    <button class="button operator">+</button> <!-- Button for addition (+) -->
+                </div>
+                <div> <!-- Group of buttons for double zero (00), zero (0), decimal point (.), and equals (=) -->
+                    <button class="button">00</button>
+                    <button class="button">0</button>
+                    <button class="button">.</button>
+                    <button class="button equalBtn">=</button> <!-- Button for equals (=) -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script> <!-- Links an external JavaScript file (app.js) for adding functionality -->
+</body>
+</html>
